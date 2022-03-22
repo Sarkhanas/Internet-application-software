@@ -1,3 +1,5 @@
+import Logo from './res/summary-stamp.jpg'
+import Photo from './res/filler.jpg'
 
 function App() {
   return (
@@ -7,7 +9,7 @@ function App() {
           <table align="center" width="99%">
             <tr class="container" align="center">
               <td class="logo" align="left" width="10%">
-                <img src="../public/summary-stamp.jpg"/>
+                <img src="summary-stamp.jpg"/>
               </td>
               <td class="quiz" align="right">
                 <a>Опрос</a>
@@ -28,7 +30,7 @@ function App() {
         <h2 align="center">Резюме</h2>
         <tr align="center">
           <td align="left" width="7%">
-            <img src="../public/filler.jpg" alt="Фото/логотип" height="180" width="125"/>
+            <img src="filler.jpg" alt="Фото/логотип" height="180" width="125"/>
           </td>
           <td align="left">
             <p>
