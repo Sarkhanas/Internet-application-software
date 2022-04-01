@@ -14,9 +14,11 @@ export default function Home() {
             <br/>
             <Row xs="auto">
                 <Col md="auto">
+                    <a name="top"></a>
                     <img src="filler.jpg" width={100} height={150}/>
                 </Col>
                 <Col md="auto">
+                    <a name="main"></a>
                     <text>
                         <b>Surname:</b> Kolpakov
                         <br/>
@@ -33,6 +35,7 @@ export default function Home() {
             <Row xs="auto">
                 <Col md={2}/>
                 <Col md="auto">
+                    <a name="little_more"></a>
                     <table border={3} align="center">
                         <tr>
                             <td><h3 align="center">Abilities</h3></td>
@@ -81,6 +84,7 @@ export default function Home() {
             <br/>
             <Row xs="auto">
                 <Col md="auto">
+                    <a name="things"></a>
                     <h3>Loved Videos</h3>
                     <iframe width="478" height="269" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                             title="YouTube video player" frameBorder="0"
@@ -118,7 +122,16 @@ export default function Home() {
                     </audio>
                 </Col>
             </Row>
-
+            <Row xs="auto">
+                <Col md="auto">
+                    <list>
+                        <li><a href="#main">Main INFO</a></li>
+                        <li><a href="#little_more">Little more about me</a></li>
+                        <li><a href="#things">Loved things and other</a></li>
+                        <li><a href="#top">To the top</a></li>
+                    </list>
+                </Col>
+            </Row>
         </Container>
     );
 }

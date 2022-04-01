@@ -1,40 +1,39 @@
-import '../../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { Nav, Navbar, Button, Container, Row, Col } from 'react-bootstrap';
-import {
-    BrowserRouter as Router,
-    Route,
-    Routes,//==Switch in 'react-router-dom' v6
-    Link
-} from 'react-router-dom';
+import {Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
+
 
 export default function Header() {
-    <>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
-                <Navbar.Brand href="/">Sarkhanas</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Container>
-                        <Row>
-                            <Col>
-                                <Nav className="mr-auto" >
-                                    <Nav.Link href="/">Articles</Nav.Link>
-                                    <Nav.Link href="/news">News</Nav.Link>
-                                </Nav>
-                            </Col>
-                            <Col me='auto'>
-                                <Nav className="justify-content-end">
-                                    <Button variant="primary" className="me-md-2">
-                                        Log In
-                                    </Button>
-                                    <Button variant="primary">Sign Out</Button>
-                                </Nav>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    </>
+    return (
+        <>
+            <Navbar bg="white">
+                <Container>
+                    <Col md="auto">
+                        <Navbar.Brand href="/">
+                            <img
+                                src="summary-stamp.png"
+                                width="150"
+                                height="100"
+                                className="d-inline-block align-top"
+                                alt="logo192.png"
+                            />
+                        </Navbar.Brand>
+                    </Col>
+                    <Col md={4}/>
+                    <Col md="auto">
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="me-auto">
+                                <Nav.Link href="/">Summary</Nav.Link>
+                                <Nav.Link href="/form">Form</Nav.Link>
+                                <Nav.Link href="/quiz">Quiz</Nav.Link>
+                                <Nav.Link href="/login">Log In</Nav.Link>
+                                <Nav.Link href="/registration">Registration</Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Col>
+                </Container>
+            </Navbar>
+        </>
+);
 }
