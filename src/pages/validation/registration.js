@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {Component, useState} from 'react';
 import {Row, Col, Container, Button, Card} from "react-bootstrap";
 

@@ -4,7 +4,7 @@ import {Row, Col, Container} from "react-bootstrap";
 
 export default function Home() {
     return (
-        <Container fluid="md">
+        <Container fluid="md" bg="black">
             <Row xs="auto">
                 <Col md={5}/>
                 <Col md="auto">
@@ -14,8 +14,7 @@ export default function Home() {
             <br/>
             <Row xs="auto">
                 <Col md="auto">
-                    <a name="top"></a>
-                    <img src="filler.jpg" width={100} height={150}/>
+                    <img className="App-logo" src="filler.png" width={100} height={110}/>
                 </Col>
                 <Col md="auto">
                     <a name="main"></a>
