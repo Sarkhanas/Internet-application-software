@@ -4,7 +4,7 @@ import {Row, Col, Container} from "react-bootstrap";
 
 export default function Home() {
     return (
-        <Container fluid="md" bg="black">
+        <Container className="Home-container" fluid="md">
             <Row xs="auto">
                 <Col md={5}/>
                 <Col md="auto">
