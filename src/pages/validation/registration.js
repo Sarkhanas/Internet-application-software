@@ -25,6 +25,7 @@ export default function Registration() {
     return (
         <>
             <Container>
+                <Row/>
                 <Row xs="auto">
                     <Col md={4}/>
                     <Col md="auto">

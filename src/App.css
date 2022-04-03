@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   color: #171717;
-
+  background-color: #171717;
 }
 
 .App-logo {
@@ -15,7 +15,6 @@
 }
 
 .App-header {
-  background-color: #171717;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,11 +32,18 @@
   background-color: #171717;
 }
 
-header {
+.App-footer {
+  color: #171717;
   background-color: #171717;
 }
 
-footer {
+.blockquote-footer {
+  color: #171717;
+  background-color: #171717;
+}
+
+header {
+  color: #171717;
   background-color: #171717;
 }
 
