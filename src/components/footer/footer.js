@@ -14,12 +14,12 @@ export default function Footer() {
                             <Card.Header>Quote</Card.Header>
                             <Card.Body>
                                 <blockquote className="blockquote mb-0">
-                                    <p>
+                                    <p className="font-edit">
                                         {' '}
                                         Do you think all that simple? Yes, it's simple. But not at all...{' '}
                                     </p>
                                     <footer bg='dark' text='secondary' className="blockquote-footer">
-                                        <i>Albert Einstein</i>
+                                        <i className="font-edit">Albert Einstein</i>
                                     </footer>
                                 </blockquote>
                             </Card.Body>

@@ -26,11 +26,11 @@ export default function Header() {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link href="/home">Summary</Nav.Link>
-                                <Nav.Link href="/form">Form</Nav.Link>
-                                <Nav.Link href="/quiz">Quiz</Nav.Link>
-                                <Nav.Link href="/login">Log In</Nav.Link>
-                                <Nav.Link href="/registration">Registration</Nav.Link>
+                                <Nav.Link className="font-edit" href="/home">Summary</Nav.Link>
+                                <Nav.Link className="font-edit" href="/form">Form</Nav.Link>
+                                <Nav.Link className="font-edit" href="/quiz">Quiz</Nav.Link>
+                                <Nav.Link className="font-edit" href="/login">Log In</Nav.Link>
+                                <Nav.Link className="font-edit" href="/registration">Registration</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Col>

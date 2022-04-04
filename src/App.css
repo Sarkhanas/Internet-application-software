@@ -1,3 +1,4 @@
+/*className's*/
 .App {
   text-align: center;
   color: #212529;
@@ -10,26 +11,31 @@
   pointer-events: none;
 }
 .font-edit {
-  font-family: 'Rubik Glitch', cursive;
+  font-family: 'Forum', cursive;
 }
-
 .App-link {
   color: #61dafb;
 }
 .App-footer {
   margin-top: 240px;
-  height: 193px;
+  margin-bottom: 0;
+  height: 208px;
   color: #212529;
   background-color: #212529;
 }
 .nav-link{
   color: #6C757D !important;
+  text-decoration: none;
+}
+.nav-link:hover{
+  color: #6C757D !important;
+  text-decoration: underline;
 }
 
+/*Components*/
 header {
   color: #212529;
   background-color: #212529;
-  visibility: visible;
 }
 h1 {
   color: #6C757D;
@@ -53,11 +59,8 @@ input {
 text {
   color: #6C757D;
 }
-footer{
-  visibility: visible;
-}
 
-
+/*Rules*/
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

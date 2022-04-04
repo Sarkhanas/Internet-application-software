@@ -63,10 +63,11 @@ export default function Registration() {
                     <Col md={4}/>
                     <Col md="auto">
                         <Card bg='dark' text='secondary' border='dark'>
-                            <Card.Header as="h5">Registration</Card.Header>
+                            <Card.Header as="h5" className="font-edit">Registration</Card.Header>
                             <Card.Body>
                                 {(emailDirty && emailError) && <div style={{color:'red'}}>{emailError}</div>}
                                 <input
+                                    className="font-edit"
                                     value={email}
                                     onChange={e => emailHandler(e)}
                                     onBlur={e => blurHandler(e)}
@@ -76,6 +77,7 @@ export default function Registration() {
                                 <br/>
                                 {(passwordDirty && passwordError) && <div style={{color:'red'}}>{passwordError}</div>}
                                 <input
+                                    className="font-edit"
                                     value={password}
                                     onChange={e => passwordHandler(e)}
                                     onBlur={e => blurHandler(e)}
@@ -83,7 +85,7 @@ export default function Registration() {
                                     type="password"
                                     placeholder="Enter your password...."/>
                                 <br/>
-                                <Button disabled={!formValid} variant="secondary">Registr</Button>
+                                <Button className="font-edit" disabled={!formValid} variant="secondary">Registr</Button>
                             </Card.Body>
                         </Card>
                     </Col>
