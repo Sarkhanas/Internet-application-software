@@ -10,7 +10,7 @@ export default function Footer() {
                 <Row xs="auto">
                     <Col md={3}/>
                     <Col md="auto">
-                        <Card>
+                        <Card bg='dark' text='secondary'>
                             <Card.Header>Quote</Card.Header>
                             <Card.Body>
                                 <blockquote className="blockquote mb-0">
@@ -18,7 +18,7 @@ export default function Footer() {
                                         {' '}
                                         Do you think all that simple? Yes, it's simple. But not at all...{' '}
                                     </p>
-                                    <footer className="blockquote-footer">
+                                    <footer bg='dark' text='secondary' className="blockquote-footer">
                                         <i>Albert Einstein</i>
                                     </footer>
                                 </blockquote>

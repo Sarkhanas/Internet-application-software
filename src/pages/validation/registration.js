@@ -1,3 +1,4 @@
+import '../../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {Component, useState} from 'react';
 import {Row, Col, Container, Button, Card} from "react-bootstrap";
@@ -25,11 +26,11 @@ export default function Registration() {
     return (
         <>
             <Container>
-                <Row/>
+                <Row className="Tab"/>
                 <Row xs="auto">
                     <Col md={4}/>
                     <Col md="auto">
-                        <Card>
+                        <Card bg='dark' text='secondary' border='dark'>
                             <Card.Header as="h5">Registration</Card.Header>
                             <Card.Body>
                                 {(emailDirty && emailError) && <div style={{color:'red'}}>{emailError}</div>}
@@ -38,7 +39,7 @@ export default function Registration() {
                                 {(passwordDirty && passwordError) && <div style={{color:'red'}}>{passwordError}</div>}
                                 <input value={password} onBlur={e => blurHandler(e)} name='password' type="password" placeholder="Enter your password...."/>
                                 <br/>
-                                <Button variant="primary">Registr</Button>
+                                <Button variant="secondary">Registr</Button>
                             </Card.Body>
                         </Card>
                     </Col>

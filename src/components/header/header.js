@@ -1,4 +1,4 @@
-
+import '../../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import {Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
@@ -7,7 +7,7 @@ import {Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
 export default function Header() {
     return (
         <>
-            <Navbar bg="white">
+            <Navbar bg="dark" text='secondary'>
                 <Container>
                     <a name="top"/>
                     <Col md="auto">

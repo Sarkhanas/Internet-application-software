@@ -4,7 +4,7 @@ import {Row, Col, Container} from "react-bootstrap";
 
 export default function Home() {
     return (
-        <Container className="Home-container" fluid="md">
+        <Container bg='dark' text='white' className="Home-container" fluid="md">
             <Row xs="auto">
                 <Col md={5}/>
                 <Col md="auto">
@@ -90,11 +90,14 @@ export default function Home() {
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen></iframe>
                 </Col>
+            </Row>
+            <br/>
+            <Row xs="auto">
                 <Col md="auto">
                     <h3>Loved Music</h3>
                     <i>1) Johnny_Silverhand_ThemeCello_Violin_version_Cyberpunk_2077</i>
                     <br/>
-                    <audio controls>
+                    <audio controls >
                         <source src="Johnny_Silverhand_ThemeCello_Violin_version_Cyberpunk_2077_160kbps.mp3" type="audio/mpeg"/>
                         Your browser does not support the audio tag.
                     </audio>
@@ -121,6 +124,7 @@ export default function Home() {
                     </audio>
                 </Col>
             </Row>
+            <br/>
             <Row xs="auto">
                 <Col md="auto">
                     <list>

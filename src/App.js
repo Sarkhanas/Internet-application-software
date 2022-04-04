@@ -17,7 +17,7 @@ function App() {
       <>
           <header>
               <Header />
-              <hr/>
+              <hr className="App-line"/>
           </header>
           <Router>
               <Routes>
@@ -25,8 +25,8 @@ function App() {
                   <Route path="/registration" element={<Registration />}/>
               </Routes>
           </Router>
-          <footer className=".App-footer">
-              <hr/>
+          <footer className="App-footer">
+              <hr className="App-line"/>
               <Footer />
           </footer>
       </>
