@@ -10,7 +10,7 @@ export default function Header() {
             <Navbar bg="dark" text='secondary'>
                 <Container>
                     <a name="top"/>
-                    <Col md="auto">
+                    <Col className="brand" md="auto">
                         <Navbar.Brand href="/">
                             <img
                                 src="summary-stamp.png"
@@ -26,7 +26,7 @@ export default function Header() {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <Nav.Link href="/">Summary</Nav.Link>
+                                <Nav.Link href="/home">Summary</Nav.Link>
                                 <Nav.Link href="/form">Form</Nav.Link>
                                 <Nav.Link href="/quiz">Quiz</Nav.Link>
                                 <Nav.Link href="/login">Log In</Nav.Link>

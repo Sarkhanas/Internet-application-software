@@ -4,11 +4,11 @@ import {Row, Col, Container} from "react-bootstrap";
 
 export default function Home() {
     return (
-        <Container bg='dark' text='white' className="Home-container" fluid="md">
+        <Container className="Home-container" fluid="md">
             <Row xs="auto">
                 <Col md={5}/>
                 <Col md="auto">
-                    <h1 align="center">Summary</h1>
+                    <h1 className="glitched-text" data-text="Summary">Summary</h1>
                 </Col>
             </Row>
             <br/>
@@ -25,7 +25,7 @@ export default function Home() {
                         <br/>
                         <b>Patronymic:</b> Andreevich
                         <p>
-                            <b>GitHub:</b> <a href="https://github.com/Sarkhanas">https://github.com/Sarkhanas</a>
+                            <b>GitHub:</b><a>https://github.com/Sarkhanas</a>
                         </p>
                     </text>
                 </Col>
@@ -37,10 +37,10 @@ export default function Home() {
                     <a name="little_more"></a>
                     <table border={3} align="center">
                         <tr>
-                            <td><h3 align="center">Abilities</h3></td>
-                            <td><h3 align="center">Knowledge</h3></td>
-                            <td><h3 align="center" colspan={2}>Hobby</h3></td>
-                            <td><h3 align="center">Top favoarite food</h3></td>
+                            <td><h3 className="glitched-text" data-text="Abilities" align="center">Abilities</h3></td>
+                            <td><h3 className="glitched-text" data-text="Knowledge" align="center">Knowledge</h3></td>
+                            <td><h3 className="glitched-text" data-text="Hobby" align="center" colspan={2}>Hobby</h3></td>
+                            <td><h3 className="glitched-text" data-text="Top favourite food" align="center">Top favourite food</h3></td>
                         </tr>
                         <tr>
                             <td>

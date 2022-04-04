@@ -1,0 +1,32 @@
+.Welcome-img{
+    margin-left: 26%;
+    width: 45%;
+    height: 45%;
+    pointer-events: none;
+}
+.Welcome-btn{
+    margin-left: 45%;
+    margin-top: 2%;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .Welcome-img {
+        animation: Welcome-img-spin infinite 20s linear;
+    }
+}
+@keyframes Welcome-img-spin {
+    from {
+        transform: rotate(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotate(360deg) rotateY(360deg);
+    }
+}

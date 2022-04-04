@@ -3,79 +3,71 @@
   color: #212529;
   background-color: #212529;
 }
-
 .Tab {
   height: 200px;
 }
-
 .App-logo {
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-edit {
+  font-family: 'Rubik Glitch', cursive;
 }
 
 .App-link {
   color: #61dafb;
 }
-
 .App-footer {
   margin-top: 240px;
   height: 193px;
   color: #212529;
   background-color: #212529;
 }
-
-.nav-link {
-  text-decoration-color: #6C757D;
+.nav-link{
+  color: #6C757D !important;
 }
 
 header {
   color: #212529;
   background-color: #212529;
+  visibility: visible;
 }
-
 h1 {
   color: #6C757D;
 }
-
 h3 {
   color: #6C757D;
 }
-
 li {
   color: #6C757D;
 }
-
 b {
   color: #6C757D;
 }
-
 i {
   color: #6C757D;
 }
-
-.nav-link{
-  color: #6C757D !important;
-}
-
 input {
   background-color: #171717;
   color: #6C757D;
 }
-
 text {
   color: #6C757D;
 }
+footer{
+  visibility: visible;
+}
 
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg) rotateY(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg) rotateY(360deg);
   }
 }
