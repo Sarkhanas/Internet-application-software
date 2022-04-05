@@ -13,6 +13,7 @@ export default function Header() {
                     <Col className="brand" md="auto">
                         <Navbar.Brand href="/">
                             <img
+                                className="nav-logo"
                                 src="summary-stamp.png"
                                 width="150"
                                 height="100"
@@ -21,7 +22,7 @@ export default function Header() {
                             />
                         </Navbar.Brand>
                     </Col>
-                    <Col md={4}/>
+                    <Col md={6}/>
                     <Col md="auto">
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -34,6 +35,7 @@ export default function Header() {
                             </Nav>
                         </Navbar.Collapse>
                     </Col>
+                    <Col md={2}/>
                 </Container>
             </Navbar>
         </>
