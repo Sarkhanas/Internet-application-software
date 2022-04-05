@@ -4,6 +4,7 @@ import Footer from './components/footer/footer';
 import Registration from './pages/validation/registration';
 import Home from './pages/homePage/home';
 import Welcome from "./pages/welcomePage/welcome";
+import Form from "./pages/form/form"
 import {
     BrowserRouter as Router,
     Route,
@@ -24,6 +25,7 @@ function App() {
               <Routes>
                   <Route exact path="/" element={<Welcome />} />
                   <Route path="/home" element={<Home />} />
+                  <Route path="/form" element={<Form/>} />
                   <Route path="/registration" element={<Registration />}/>
               </Routes>
           </Router>
